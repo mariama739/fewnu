@@ -1,0 +1,512 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.clear {
+    position: fixed;
+    width: 100%;
+    z-index: 50;
+}
+
+header {
+
+    height: 90px;
+}
+
+
+.nav1,
+.contact {
+    display: flex;
+    justify-content: space-between;
+    background: #ddd;
+    padding: 5px 15px;
+    font-size: 13px;
+
+}
+
+.contact_img {
+    width: 3w;
+    height: 3vh;
+}
+
+.contact_img img {
+    width: 100%;
+    height: 100%;
+}
+.contact_icon i {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#contact_icon div i {
+    color: #0BCAD4;
+
+}
+
+.contact div select {
+    border: none;
+    background-color: #ddd;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 62%;
+    background-color: #333;
+    padding: 10px 10px 5px 10px;
+}
+
+.menu2 {
+    display: flex;
+    gap: 23px;
+    flex-wrap: nowrap;
+
+}
+.menu2 a {
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+}
+
+.toggle {
+    display: flex;
+}
+
+.toggle input,
+label {
+    visibility: hidden;
+}
+
+
+
+.dropdown {
+    float: left;
+    padding-top: 10px;
+
+}
+
+.dropdown .dropbtn {
+    font-size: px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: sans-serif;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu_img {
+    width: 6vw;
+    height: 7vh;
+}
+
+.menu_img img {
+    width: 100%;
+    height: 100%;
+}
+.menu-mobile {
+
+    color: #fff;
+
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: grey;
+
+}
+@media screen and (max-width: 768px) {
+
+    .toggle label {
+        visibility: initial;
+        padding-left: 90%;
+        font-size: 28px;
+    }
+
+    .toggle input {
+        display: none;
+    }
+
+    input:checked+.menu2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        transform: translateX();
+        gap: 8px;
+        font-size: 13px;
+         }
+        .menu div {
+            margin: initial;
+        }
+        
+        .menu2 {
+            transform: translateX(-50%);
+            overflow: initial;
+        }        
+        .dropdown-content {
+            width: 100%;
+            border-radius: 5px;
+            margin: 5px 0px;
+        }
+        
+        .dropdown-content a:hover {
+            color: white;
+            background-color: grey
+        }
+        
+        .dropdown {
+            margin-left: -4px;
+        }
+                .toggle {
+                    display: flex;
+                    flex-direction: column;
+        
+                }
+                header {
+                    height: 62px;
+                }
+        
+                .menu2,
+                .rond div {
+                    display: none;
+                }
+        
+                .dropdown:hover .dropdown-content {
+                    display: block;
+                }
+        
+                .dropdown:hover {
+                    height: 127px;
+                    border-radius: 5px;
+                }
+        
+                .nav1 {
+                    display: none;
+                }
+                }
+
+.container{
+    background-image: url(im/bg-compta.png);
+    object-fit: cover;
+    /* height: 40rem; */
+}
+.gauche-droite{
+    color: white;
+    padding: 30px;
+    padding-top: 15%;
+}
+.droite> h1 {
+    font-size: 42px;
+    padding-bottom: 20px;
+}
+.droite> h2{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.droite> P{
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.fleche{
+    display: flex;
+    /* padding-left: 40px; */
+    background-color: white;
+    width: 340px;
+    height: 3rem;
+    border-radius: 50px;
+    margin-top: 40px;
+    
+}
+.Fl>p{
+    color: #188b91;
+    font-size: 20px;
+    margin-left: 20px;
+} 
+.Fl{
+    display: flex;
+    align-items: center;
+}
+.FP{
+    background-color: #188b91;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.FP> img{
+    margin-top: 20px;
+}
+/* section2 */
+.section2{
+    display: flex;
+    justify-content: space-around;
+    background-color: #e4e4e4;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.image-femme{
+    background-color: white;
+}
+.section-femme> P{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+span{
+    padding-left: 10px;
+}
+button{
+    height: 2rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #0BCAD4;
+    padding: 10PX ;
+}
+/* section3 */
+.section3{
+    background-color: #005368;
+    display: flex;
+    justify-content: space-around;
+}
+.compta{
+    background-repeat: no-repeat;
+}
+.comptaimg{
+    width: 50rem;
+}
+.right{
+    padding: 50px;
+    color: white;
+}
+.right> h3{
+    padding-bottom: 20px;
+}
+.right> p{
+   padding: 8px;
+}
+.bar{
+    width: 50px;
+    height: 3px;
+    background-color: rgb(205, 247, 255);
+}
+.inscription{
+    background-color: white;
+    color: #177d83;
+}
+/* .section4 */
+.main5{
+    width: 120px;
+}
+.main1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 3%;
+}
+.haut{
+    margin-left: 50px;
+    padding: 30px;
+}
+.bar2{
+    width: 60px;
+    height: 4px;
+    background-color: rgb(181, 236, 247);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.pp{
+    font-size: 14px;
+}
+.pt{
+    font-size: 14px;
+}
+/* .section5 */
+.section5{
+    background-color: #e4e4e4;
+}
+.TELECHARGER{
+    color: white;
+    margin-top: 10%;
+}
+.section5{
+    display: flex;
+    justify-content: space-between;
+}
+.element{
+    padding: 50px;
+    margin-left: 5%;
+}
+.element> h4{
+    padding-top: 5%;
+}
+.element> P{
+    padding-top: 5px;
+}
+/* section6 */
+.flex{
+    display: flex;
+    margin-left: 5%;
+    padding: 20px;
+}
+.fewnu, h5{
+  padding-left: 10px;
+}
+.glob{
+    display: flex;
+}
+.video{
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+.section-glob{
+    overflow-y: scroll;
+    width: 30%;
+    height: 300px;
+}
+.h> h5{
+    font-size: 12px;
+}
+.fewnu{
+    color: #8b8a8a;
+}
+.cas{
+    padding: 6%;
+    margin-left: 4%;
+}
+.span2{
+    font-size: 12px;
+}
+.chek{
+    width: 15px;
+}
+.section7{
+    padding-left: 3%;
+    background-color: #e4e4e4;
+    padding-bottom: 5%;
+}
+.sect{
+    display: flex;
+    justify-content: space-around;
+}
+.part{
+    background-color: #faf8f8;
+    width: 85%;
+    padding: 20PX;
+}
+.enhaut1{
+    background: #0bcad4;
+    text-align: center;
+    padding: 20px;
+}
+.enhaut{
+    text-align: center;
+    padding: 20px;
+}
+.essay{
+    background-color: #d4cfcf;
+    width: 21%;
+    border-radius: 5PX;
+}
+.premier{
+    padding: 30PX;
+}
+.PAD{
+    padding-bottom: 10px;
+}
+.Sinscrire{
+   background-color: #005368;
+   border-radius: 5px;
+   color: white;
+}
+b{
+    font-size: 30px;
+}
+.mois{
+    padding-top: 18px;
+}
+.section8{
+    background-color: #e4e4e4; 
+    padding-bottom: 7%;
+}
+.carte{
+    background-color: white;
+    padding: 20px;
+    width: 20%;
+    border-radius: 15PX;
+    margin: 20px;
+}
+.pers{
+    display: flex;
+}
+.fa{
+    color: #0BCAD4;
+}
+.lorem, .statut{
+    font-size: 13px;
+    margin-left: 5PX;
+}
+.nom{
+    margin-top: 10px;
+}
+.tout{
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.897);
+    color: white
+}
+.foot{
+    display: flex;
+    gap: 18%;
+}
+.foot, .log{
+    margin-left: 50px;
+    padding-bottom: 30px;
+}
+.parr{
+    margin-top: 5%;
+    font-size: 25px;
+}
+.infofoot{
+    display: flex;
+    justify-content: space-around;
+}
+.trait{
+    text-decoration: underline;
+}
+.icone{
+    margin-left: 6%;
+}
+.icone, .fa-brands{
+    padding-top: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 15px;
+}
