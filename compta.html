@@ -1,92 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>budget</title>
+    <title>Fewnu Budget</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <!-- <link rel="stylesheet" href="animation.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="compta.css">
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="slide.css">
-    <!-- <link rel="stylesheet" href="index.css"> -->
-    <link rel="stylesheet" href="budget.css">
     <link rel="shortcut icon" href="im/fewnu.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+
 </head>
 <body>
- <div class="Global">
-    <div class="container">
-        <div class="main">
-          <div class="group">
-            <header>
-		<nav class="clear">
-			<div class="nav1">
-			<div class="contact" id="contact_icon">
-				<div >
-					<a><i class="bi bi-envelope">&nbsp; </i> contact.fewnu@gmail.com</a>
-				</div>
-				<div>
-					<a > &emsp;<i class="fa-solid fa-phone-volume"> &nbsp;</i> +22178293 36 46</a>
-				</div>			
-			</div>
-			<div class="contact">
-			
-					
-				<span>Nous suivre &emsp;</span>
-				
-				<div class="contact_icon">
-					<i class="bi bi-facebook"></i>
-					<i class="bi bi-instagram"></i>
-					<i class="bi bi-tiktok"></i>
-					<i class="bi bi-youtube"></i>
-					<i class="bi bi-linkedin"></i>
-				</div>
-			</div>
-			<div class="contact">
-				<div class="contact_img">
-					<img src="im/fr.jpg">
-				</div>
-        <div>
-					<select>
-						<option>fr</option>
-						<option>An</option>
-					</select>
-				</div>
-			</div>
-			</div>
-			<div class="menu">
-				<div class="menu_img">
-					<img src="im/fewnu.png">
-				</div>
 
-				
-				<div class="toggle">
-				<label for="menu-mobile" class="menu-mobile fas fa-bars" id="bars"></label>
-				<input type="checkbox" name="" id="menu-mobile" role="button ">
-				
-				<div class="menu2">
-					<a href="accueille.html">Accueil</a>
-					<a href="#">Qui sommes-nous</a>
-					<div class="dropdown">
-	   					 <button class="dropbtn">Nos application 
-	   						   <i class="fa fa-caret-down"></i>
-	   					 </button>
-	   					 <div class="dropdown-content">
-	     					 <a href="budget.html">Fewnu 
-                  Budget</a>
-							 <a href="compta.html">Fewnu Compta et facturation</a>
-	     					 <a href="tailleur.html">Tayeur Gestion</a>
-	   				 	</div>
-  					</div> 
-  					<a href="contact.html">Contact</a>
-				</div>
-			</div>
-				
-			</div>
-		</nav>
-		</header>
-           </div>
+    <header id="header1">
+
+        <div id="nav">
+            <div class="nav-part1">
+                <div id="items">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>contact.fewnu@gmail.com</p>
+                </div>
+                <div id="items">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>+221 78 293 36 56</p>
+                </div>
+            </div>
+            <div class="nav-part2">
+                <p>Nous suivre</p>
+                <div id="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="nav-part3">
+                <img src="im/fr.jpg" alt="">
+                    <p>Fr</p>
+                    <i class="fa-solid fa-sort-down"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <header id="header" class="menu">
+        <div class="menu-wrap">
+            <img src="im/fewnu.png" class="logo-img" alt="Logo">
+            <input type="checkbox" id="checkbox">
+            <nav>
+                <ul class="navabr-list">
+                    <li><a id="active" href="accueille.html">Accueil</a></li>
+                    <li class="navbar-items" id="menu-html"><a href="#" class="navbar-link" >Nos applications &blacktriangledown; </a>
+                    
+                        <ul class="submenu" id="submenu">
+                            <li id="lien"><a id="lien" href="budget.html">Fewnu Budget</a></li>
+                            <li id="lien"><a id="lien" href="compta.html">FewnuCompta et Facturation</a></li>
+                            <li id="lien"><a id="lien" href="">Fewnu Tayeur</a></li>
+                        </ul>
+                    
+                    </li>
+                    <li><a href="#">Qui sommes-nous?</a></li> 
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <label for="checkbox">
+                <i class="fa fa-bars menu-icon"></i>
+            </label>
+        </div>
+    </header>
+
+    <div id="whatsapp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </div>
         </div>
            <div class="gauche-droite">
             <div class="droite">
@@ -372,108 +363,290 @@
         </div>
       </div>
 
-      <div class="section8">
-          <h4 class="premier">TEMOINGNAGE DE NOS CLIENTS</h4>
-          <div class="bar2"></div>
-          <div class="tout">
-          <div class="carte">
-            <div class="pers">
-              <div class="person">
-                <img src="im/personnat.png" alt="portrait">
-              </div>
-              <div class="nom">
-                <h5>Mouhamed Geuye</h5>
-                <p class="statut">Dev front-end</p>
-              </div>
-            </div>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Veritatis deleniti aperiam <br>voluptate sint aliquam! Hic velit odio quibusdam <br>non harum incidunt aliquid! Eos quas, omnis <br>aliquid corrupti dolorum aspernatur placeat.</p>
-            <i class="fa fa-quote-right icone-bleu"></i>
-          </div>
-
-          <div class="carte">
-            <div class="pers">
-              <div class="person">
-                <img src="im/personnat.png" alt="portrait">
-              </div>
-              <div class="nom">
-                <h5>Mamadou Saliou Diallo</h5>
-                <p class="statut">Dev Back-end</p>
-              </div>
-            </div>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Veritatis deleniti aperiam <br>voluptate sint aliquam! Hic velit odio quibusdam <br>non harum incidunt aliquid! Eos quas, omnis <br>aliquid corrupti dolorum aspernatur placeat.</p>
-            <i class="fa fa-quote-right icone-bleu"></i>
-          </div>
-
-          <div class="carte">
-            <div class="pers">
-              <div class="person">
-                <img src="im/personnat.png" alt="portrait">
-              </div>
-              <div class="nom">
-                <h5>Fallou Wade</h5>
-                <p class="statut">Dev front-end</p>
-              </div>
-            </div>
-            <p class="lorem">Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Veritatis deleniti aperiam <br>voluptate sint aliquam! Hic velit odio quibusdam <br>non harum incidunt aliquid! Eos quas, omnis <br>aliquid corrupti dolorum aspernatur placeat.</p>
-            <i class="fa fa-quote-right icone-bleu"></i>
-          </div>
-      </div>
+<!-- VOICI MA SECTION SUR LES TEMOIGNAGE -->
+      <div class="nos">
+      <h4>Temoignage de nos clients</h4>
+      <div class="ligee"></div>
     </div>
+      <div class="slider-container slider-1">
+        
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
 
-   <footer id="footer">
-        <div id="grid">
-            <div id="fewnu">
-                <img src="im/" alt="">
-                <p>Nous vous coachons et vous aidons <br> à atteindre vos objectifs pour votre Business Avec Fewnu, nous pouvons vous aider à chaque étape du processus. Téléchargez <br> votre Logiciel de Gestion Fewnu et facilitez votre quotidien. Qu’est-ce que vous attendez pour faire le premier pas aujourd’hui ?</p>
-            </div>
-            <div id="flex">
-                <h2>NOS SERVICES</h2>
-                <p>Fewnu Budget</p>
-                <p>Fewnu Compta et Facturation</p>
-                <p>Tayeur Gestion</p>
-            </div>
-            <div id="flex">
-                <h2>AUTRES SERVICES</h2>
-                <p>Création de sites web</p>
-                <p>Community menagement</p>
-                <p>Création d'identité visuelle</p>
-                <p>hooting photo</p>
-                <p>Tournage et montage video</p>
-                <p>Création d'affiches</p>
-            </div>
-            <div id="flex">
-                <h2>CONTACT</h2>
-                <div class="hlm">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>HLM Grand-yoff <br> Dakar/Sénégal villa 32 Terminus AIBD</p>
+        <div class="slider">
+          <section class="main" id="main">
+            <div class="full-boxer">
+                <div class="comment-box" id="cache">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 1">
+                            </div>
+                            <div class="Name">
+                                <strong>Alkaly Badji</strong>
+                                <span>Dev Front-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
                 </div>
-
-                <div class="hlm">
-                    <i class="fa-solid fa-phone-volume"></i>
-                    <p>+221 78 293 36 56</p>
-                </div>
-
-                <div class="hlm">
-                    <i class="fa-regular fa-envelope-open"></i>
-                    <p>contact.fewnu@gmail.com</p>
+      
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 2">
+                            </div>
+                            <div class="Name">
+                                <strong>Mahmoud Barry</strong>
+                                <span>Dev Back-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
                 </div>
             </div>
+      
+          </section>
+      
+          <section class="main" id="main">
+            <div class="full-boxer">
+                <div class="comment-box" id="cache">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 1">
+                            </div>
+                            <div class="Name">
+                                <strong>Oumy</strong>
+                                <span>Dev Front-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+      
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 2">
+                            </div>
+                            <div class="Name">
+                                <strong>Pascal Correa</strong>
+                                <span>Dev Back-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+      
+          </section>
+      
+          <section class="main" id="main">
+            <div class="full-boxer">
+                <div class="comment-box" id="cache">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 1">
+                            </div>
+                            <div class="Name">
+                                <strong>Alkaly Badji</strong>
+                                <span>Dev Front-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+      
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 2">
+                            </div>
+                            <div class="Name">
+                                <strong>Mahmoud Barry</strong>
+                                <span>Dev Back-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+      
+          </section>
+      
+          <section class="main" id="main">
+            <div class="full-boxer">
+                <div class="comment-box" id="cache">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 1">
+                            </div>
+                            <div class="Name">
+                                <strong>Oumy</strong>
+                                <span>Dev Front-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+      
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 2">
+                            </div>
+                            <div class="Name">
+                                <strong>Pascal Correa</strong>
+                                <span>Dev Back-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+      
+          </section>
+      
+          <section class="main" id="main">
+            <div class="full-boxer">
+                <div class="comment-box" id="cache">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 1">
+                            </div>
+                            <div class="Name">
+                                <strong>Alkaly Badji</strong>
+                                <span>Dev Front-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+      
+                <div class="comment-box">
+                    <div class="box-top">
+                        <div class="Profile">
+                            <div class="profile-image">
+                                <img src="im/personnat.png" alt="Person 2">
+                            </div>
+                            <div class="Name">
+                                <strong>Mahmoud Barry</strong>
+                                <span>Dev Back-end</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="comment">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Asperiores dolores sed et. Tenetur quia eos. Asperiores dolores sed et. Tenetur quia eos.
+                        </p>
+                        <i style="color: #0BCAD4;" class="fa-solid fa-quote-right"></i>
+                    </div>
+                </div>
+            </div>
+      
+          </section>
         </div>
 
+       
 
-        <div id="social-media">
-            <i class="fa-brands fa-facebook"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-tiktok"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-linkedin"></i>
+        <div class="controls">
+            <label for="slide1" id="slide1" class="control-dot"></label>
+            <label for="slide2" class="control-dot"></label>
+            <label for="slide3" class="control-dot"></label>
+            <label for="slide4" class="control-dot"></label>
+          </div>
+     </div>
+
+    <div class="footer">
+      <div class="foot">
+        <img src="im/fewnu.png" alt="logo" class="log">
+        <h4 class="parr">Lorem Ipsum Dolor sit amet</h4>
+      </div>
+      <div class="infofoot">
+        <div>
+          <h3>A propos</h3> <br>
+          <p>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit. <br>Sapiente quae alias pariatur <br>eveniet magni beatae eligendi, <br>iste labore eum minus ducimus <br>soluta adipisci odit.</p>
         </div>
-        <hr>
-        <div id="politique">
-            <p>&copy; 2024   Tous droits réservés - Red TEAM</p>
-            <p>Politique de confidentialité</p>
+        <div>
+          <h3>informations de contact</h3> <br>
+          <p>8502 Dakar/Sénégal. <br>Maine 98380 <br>info@gmail.com <br>+221 77 777 77 77</p>
         </div>
-    </footer>
+        <div>
+          <h3>Ressources</h3> <br>
+          <p class="trait">Lorem ipsum</p>
+          <p class="trait">Lorem ipsum</p>
+          <p class="trait">Lorem ipsum</p>
+          <p class="trait">Lorem ipsum</p>
+        </div>
+        <div>
+          <h3>Nos Services</h3> <br>
+          <p class="trait">Conversion</p>
+          <p class="trait">Achat de crédit téléphonique</p>
+          <p class="trait">Portefeuille</p>
+        </div>
+      </div>
+      <div class=icone>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    </div>
         
 
   </div>
